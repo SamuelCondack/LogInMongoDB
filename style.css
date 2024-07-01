@@ -19,7 +19,7 @@ body{
 .loginForm{
     display: flex;
     flex-direction: column;
-    width: 454px;
+    width: 491px;
     margin: 50px 0px 50px 42px;
 }
 .loginTitle{
@@ -79,6 +79,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-wrap: nowrap;
 }
 
 .emailAndPasswordText::before{
@@ -153,19 +154,35 @@ body{
 }
 
 .asideTitle{
-
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .asideParagraph{
-
+    line-height: 24px;
+    font-size: 16px;
 }
 
 .asideLink{
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
 
+.asideMobileLink{
+    text-decoration: none;
 }
 
 .asideLinkText{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
 
+.asideLinkArrow{
+    font-weight: 100;
+    color: #fff;
 }
 
 @media screen and (min-width: 1025px){
@@ -176,5 +193,72 @@ body{
         order: 2;
         display: block;
         left: 450px;
+    }
+    .asideMobileLink{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px){
+    .asideContent{
+        background-image: url(./assets/asideBackgroundSmall.svg);
+        width: 100%;
+        height: 100vh;
+        order: 2;
+        display: block;
+        left: 450px;
+    }
+    .asideMobileLink{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+        flex-direction: column;
+    }
+
+    .loginForm{
+        order: 2;
+        width: 100%;
+        margin: 20px 10px 20px 10px;
+    }
+    .asideContent{
+        background-image: url(./assets/asideBackgroundPhone.svg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+    .asideItems{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .emailAndPasswordText{
+        width: 90%;
+    }
+    .signinMethodButton{
+        width: 90%;
+    }
+    .emailInput{
+        width: 90%;
+        padding: 0;
+    }
+    .asideTitle{
+        display: none;
+    }
+    .asideParagraph{
+        display: none;
+    }
+    .asideLink{
+        display: none;
+    }
+    .asideLinkText{
+        font-weight: 700;
+        font-size: 15px;
+        border-bottom: 1px solid #E8EDEB;
     }
 }
