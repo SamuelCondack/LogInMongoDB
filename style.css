@@ -242,7 +242,7 @@ body{
         align-items: center;
     }
     .emailAndPasswordText{
-        width: 90%;
+        width: 100%;
     }
     .signinMethodButton{
         width: 97%;
