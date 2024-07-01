@@ -19,7 +19,7 @@ body{
 .loginForm{
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 454px;
     margin: 50px 0px 50px 42px;
 }
 .loginTitle{
