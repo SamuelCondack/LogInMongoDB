@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Euclid Circular';
+    src: url('fonts/Euclid\ Circular\ A\ Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Euclid Circular', sans-serif;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 343px;
+    margin: 50px 0px 50px 42px;
+}
+.loginTitle{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+    font-family: 'Value Serif Pro Medium', serif;
+    color: rgb(0, 104, 74);
+}
+.signupDiv{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(28, 45, 56);
+    margin-bottom: 32px;
+}
+.signupLink{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(1, 107, 248);
+}
+.otherSigninMethodsDiv{
+    display: flex;
+    flex-direction: column;
+}
+.signinMethodButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(92, 108, 117);
+    width: 100%;
+
+    box-sizing: border-box;
+    margin-top: 16px;
+    border-radius: 6px;
+    border: 1px solid rgb(136, 147, 151);
+    box-shadow: lightgray 0px 1px;
+    font-weight: 600;
+    transition: box-shadow .4s ease;
+}
+
+.signinMethodButton:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.emailAndPasswordText{
+    font-size: 13px;
+    color: rgb(92, 108, 117);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailAndPasswordText::before{
+    content: "";
+    flex: 1 1 10%;
+    border-bottom: 1px solid rgb(193, 199, 198);
+    margin: 0px 10px;
+    transform: translateY(-50%);
+
+}
+
+.emailAndPasswordText::after{
+    content: "";
+    flex: 1 1 10%;
+    border-bottom: 1px solid rgb(193, 199, 198);
+    margin: 0px 10px;
+    transform: translateY(-50%);
+}
